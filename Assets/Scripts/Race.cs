@@ -8,7 +8,7 @@ public class Race {
     List<Horse> entryList;
     int entryLimit;
 
-    List<Competitor> entry;
+    List<Competitor> Player;
 
     public Race(List<Horse> entryList,int entryLimit){
         this.entryList = entryList;
@@ -21,7 +21,18 @@ public class Race {
     }
 
     public void FinalEntry(List<Competitor> competitorList){
-        this.entry = competitorList;
+        this.Player = competitorList;
     }
+
+    public void Hold(){
+        StartDash();
+    }
+
+    void StartDash(){
+        foreach(Competitor player in Player){
+            player.StartDash();Debug.Log(player.getHorseName() + ":" + player.getPerformance());
+        }
+    }
+
 
 }

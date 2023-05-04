@@ -20,6 +20,13 @@ public class Horse {
         this.name = name;
     }
 
+    public void levelUp(int speed,int mental,int stamina,int spurt){
+        this.speed += speed;
+        this.mental += mental;
+        this.stamina += stamina;
+        this.spurt += spurt;
+    }
+
     public void Earn(int getMoney){
         winnings += getMoney;
     }
@@ -30,6 +37,10 @@ public class Horse {
     
     public int getWinnings(){
         return winnings;
+    }
+
+    public int getMental(){
+        return mental;
     }
     
 }

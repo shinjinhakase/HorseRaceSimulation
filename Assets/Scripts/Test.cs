@@ -17,9 +17,7 @@ public class Test : MonoBehaviour {
 
         race.FinalEntry(competitorList);
 
-        foreach(Competitor comp in competitorList){
-            Debug.Log(comp.getHorseName() + ":" + comp.getJockeyName());
-        }
+        race.Hold();
 
     }
 
@@ -36,6 +34,7 @@ public class Test : MonoBehaviour {
         List<Horse> answer = new List<Horse>(){horse1,horse2,horse3,horse4,horse5,horse6,horse7};
         foreach(Horse horse in answer){
             horse.Earn(Random.Range(1,10000));
+            horse.levelUp(0,Random.Range(1,10),0,0);
         }
 
         return answer;
