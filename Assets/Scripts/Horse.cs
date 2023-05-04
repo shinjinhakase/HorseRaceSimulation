@@ -50,5 +50,9 @@ public class Horse {
     public int getStamina(){
         return stamina;
     }
+
+    public int getSpurt(){
+        return spurt;
+    }
     
 }
