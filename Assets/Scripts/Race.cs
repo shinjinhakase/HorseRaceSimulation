@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 
 public class Race {
 
@@ -30,6 +30,17 @@ public class Race {
         Trace();
         Cornering();
         LastSpurt();
+    }
+
+    public void Result(){
+        var calcResult = Player.OrderByDescending(p => p.getPerformance());
+        string result = "";
+        int order = 1;
+        foreach(var competitor in calcResult){
+            result += order.ToString() + "着:" + ((Competitor)competitor).getHorseName() + "\n";
+            order++;
+        }
+        Debug.Log(result);
     }
 
     void StartDash(){Debug.Log("StartDash");

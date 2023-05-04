@@ -18,6 +18,7 @@ public class Test : MonoBehaviour {
         race.FinalEntry(competitorList);
 
         race.Hold();
+        race.Result();
 
     }
 
