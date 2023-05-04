@@ -27,6 +27,7 @@ public class Race {
     public void Hold(){
         StartDash();
         PositionalStrife();
+        Trace();
     }
 
     void StartDash(){Debug.Log("StartDash");
@@ -38,6 +39,12 @@ public class Race {
     void PositionalStrife(){Debug.Log("PositionalStrife");
         foreach(Competitor player in Player){
             player.PositionalStrife();Debug.Log(player.getHorseName() + ":" + player.getPerformance());
+        }
+    }
+
+    void Trace(){Debug.Log("Trace");
+        foreach(Competitor player in Player){
+            player.Trace();Debug.Log(player.getHorseName() + ":" + player.getPerformance());
         }
     }
 
