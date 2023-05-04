@@ -21,4 +21,8 @@ public class Jockey {
         return name;
     }
 
+    public int getTechnic(){
+        return technic;
+    }
+
 }
