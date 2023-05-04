@@ -24,6 +24,10 @@ public class Competitor {
     public void Trace(){
         performance += (int)(horse.getSpeed() * 1.2) + (int)(horse.getStamina() * 0.8);
     }
+    
+    public void Cornering(){
+        performance += (int)(horse.getSpeed() * 1.5) + horse.getMental();
+    }
 
     public string getHorseName(){
         return horse.getName();
