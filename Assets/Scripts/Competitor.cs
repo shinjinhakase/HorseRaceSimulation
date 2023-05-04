@@ -11,5 +11,13 @@ public class Competitor {
         this.horse = horse;
         this.jockey = jockey;
     }
+
+    public string getHorseName(){
+        return horse.getName();
+    }
+
+    public string getJockeyName(){
+        return jockey.getName();
+    }
     
 }

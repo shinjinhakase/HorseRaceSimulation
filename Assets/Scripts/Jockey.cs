@@ -17,4 +17,8 @@ public class Jockey {
         technic += level;
     }
 
+    public string getName(){
+        return name;
+    }
+
 }
