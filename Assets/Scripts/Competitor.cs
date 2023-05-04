@@ -17,6 +17,10 @@ public class Competitor {
         performance += horse.getMental() + jockey.getTechnic();
     }
 
+    public void PositionalStrife(){
+        performance += (int)(horse.getMental() * 1.5) + (int)(jockey.getTechnic() * 0.5);
+    }
+
     public string getHorseName(){
         return horse.getName();
     }
