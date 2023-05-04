@@ -42,5 +42,13 @@ public class Horse {
     public int getMental(){
         return mental;
     }
+
+    public int getSpeed(){
+        return speed;
+    }
+
+    public int getStamina(){
+        return stamina;
+    }
     
 }
