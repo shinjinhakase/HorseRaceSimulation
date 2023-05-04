@@ -34,7 +34,7 @@ public class Test : MonoBehaviour {
         List<Horse> answer = new List<Horse>(){horse1,horse2,horse3,horse4,horse5,horse6,horse7};
         foreach(Horse horse in answer){
             horse.Earn(Random.Range(1,10000));
-            horse.levelUp(Random.Range(1,20),Random.Range(1,10),Random.Range(1,20),0);
+            horse.levelUp(Random.Range(1,20),Random.Range(1,10),Random.Range(1,20),Random.Range(1,20));
         }
 
         return answer;
